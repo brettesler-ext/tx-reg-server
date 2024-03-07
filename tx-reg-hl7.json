@@ -1,0 +1,11 @@
+{
+    "formatVersion": "1",
+    "registry-url": "https://raw.githubusercontent.com/FHIR/ig-registry/master/tx-servers.json",
+    "authoritative": [
+        {
+            "server-name": "HL7 Australia Dev Server",
+            "url": "https://tx.fhir.org/r4",
+            "open": true
+        }
+    ]
+}
