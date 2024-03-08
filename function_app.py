@@ -19,6 +19,8 @@ def txdev(req: func.HttpRequest) -> func.HttpResponse:
     else:
         rsp = readfile("tx-reg-csiro.json")
         
+    logging.info(rsp)
+        
     return func.HttpResponse(
       rsp,
       headers = {'Content-Type' : 'application/json'},
