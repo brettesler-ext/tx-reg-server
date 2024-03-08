@@ -7,21 +7,21 @@
     },
     "text": {
         "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h1>CSIRO Terminology Server (Ontoserver ®)</h1><table><tr><td>Purpose</td><td>Description of terminology service capabilities</td></tr><tr><td>Publisher</td><td>The Australian e-Health Research Centre, CSIRO</td></tr><tr><td>Version</td><td>6.16.1.1709795646491</td></tr><tr><td>Date</td><td>2024-03-07</td></tr></table><p>Ontoserver supports a large portion of the FHIR Terminology Services specification. In particular, it has native support for SNOMED CT, LOINC, and code systems defined via the FHIR CodeSystem resource. This extends to supporting use of all defined and default filters in a FHIR ValueSet, as well as the implicitly defined ValueSets for SNOMED CT and LOINC.</p><p>More details are available in the <a href=\"https://ontoserver.csiro.au/docs/6.16.1/api-fhir.html\">Ontoserver documentation</a></p></div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"<p>tx-reg-server: Tx server selector</p></div>"
     },
-    "version": "6.16.1.1709795646491",
-    "name": "OntoserverTerminologyCapabilities",
-    "title": "Ontoserver® Terminology Capabilities Statement",
+    "version": "1.0",
+    "name": "tx-reg-server",
+    "title": "tx-reg-server",
     "status": "active",
     "experimental": true,
     "date": "2024-03-07T07:14:06+00:00",
-    "publisher": "The Australian e-Health Research Centre, CSIRO",
+    "publisher": "hl7 australia",
     "contact": [
         {
             "telecom": [
                 {
                     "system": "email",
-                    "value": "ontoserver-support@csiro.au"
+                    "value": "admin@hl7.com.au"
                 }
             ]
         }
@@ -29,8 +29,8 @@
     "purpose": "Description of terminology service capabilities",
     "kind": "capability",
     "software": {
-        "name": "Ontoserver®",
-        "version": "6.16.1"
+        "name": "tx-reg-server",
+        "version": "1.0"
     },
     "lockedDate": false,
     "codeSystem": [
