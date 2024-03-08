@@ -7,7 +7,7 @@
     },
     "text": {
         "status": "generated",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"<p>tx-reg-server: Tx server selector</p></div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>tx-reg-server: Tx server selector</p></div>"
     },
     "version": "1.0",
     "name": "tx-reg-server",
