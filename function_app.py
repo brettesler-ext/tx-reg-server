@@ -4,8 +4,8 @@ import logging
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
 
+@app.route(route="txdev/{a}/", defaults={"b" : ""}, auth_level=func.AuthLevel.ANONYMOUS)
 @app.route(route="txdev/{a}/{b}", auth_level=func.AuthLevel.ANONYMOUS)
-@app.route(route="txdev/{a}", auth_level=func.AuthLevel.ANONYMOUS)
 def txdev(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('url ' + req.url)
     
