@@ -15,7 +15,7 @@ def txdev(req: func.HttpRequest) -> func.HttpResponse:
         rsp = readfile("terminology.json")
     elif "/metadata" in req.url:
         rsp = readfile("metadata.json")
-    elif "common-languages-australia-1" in req.url or "unitsofmeasure.org" in req.url or "units-of-time" in req.url or "www.rcpa.edu.au" in req.url or "www.iana.org" in req.url or "au-timezone" in req.url:
+    elif "common-languages-australia" in req.url or "unitsofmeasure.org" in req.url or "units-of-time" in req.url or "www.rcpa.edu.au" in req.url or "www.iana.org" in req.url or "au-timezone" in req.url or "urn:ietf:bcp:47" in req.url:
         rsp = readfile("tx-reg.json")
     else:
         rsp = readfile("tx-reg-csiro.json")
