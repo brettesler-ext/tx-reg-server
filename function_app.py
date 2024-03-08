@@ -14,8 +14,6 @@ def txdev(req: func.HttpRequest) -> func.HttpResponse:
         rsp = readfile("terminology.json")
     elif "/metadata" in req.url:
         rsp = readfile("metadata.json")
-    elif "common-languages-australia-1" in req.url or "unitsofmeasure.org" in req.url:
-        rsp = readfile("tx-reg.json")
     else
         rsp = readfile("tx-reg-csiro.json")
         
