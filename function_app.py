@@ -5,7 +5,7 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
 
 @app.function_name(name="txdev1")
-@app.route(route="txdev/{a?}/{b?}", auth_level=func.AuthLevel.ANONYMOUS)
+@app.route(route="/{fn}/{a?}/{b?}", auth_level=func.AuthLevel.ANONYMOUS)
 def txdev(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('url ' + req.url)
     
