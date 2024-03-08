@@ -6,7 +6,7 @@ app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
 @app.route(route="txdev/{path}", auth_level=func.AuthLevel.ANONYMOUS)
 def txdev(req: func.HttpRequest) -> func.HttpResponse:
-    logging.info('txdev')
+    logging.info('txdev ' + req.url)
     
     rsp = "{}"
 
