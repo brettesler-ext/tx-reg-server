@@ -15,12 +15,14 @@ def txdev(req: func.HttpRequest) -> func.HttpResponse:
         rsp = readfile("terminology.json")
     elif "/metadata" in req.url:
         rsp = readfile("metadata.json")
-    elif "jurisdiction" in req.url or "urn:iso:std:iso:3166" in req.url:
-        rsp = readfile("tx-reg-hl7.json")
-    elif "languages" in req.url or "common-languages-australia" in req.url or "unitsofmeasure.org" in req.url or "units-of-time" in req.url or "www.rcpa.edu.au" in req.url or "www.iana.org" in req.url or "au-timezone" in req.url or "urn:ietf:bcp:47" in req.url:
-        rsp = readfile("tx-reg.json")
     else:
-        rsp = readfile("tx-reg-csiro.json")
+        rsp = readfile("tx-reg-hl7.json")
+    # elif "jurisdiction" in req.url or "urn:iso:std:iso:3166" in req.url:
+    #     rsp = readfile("tx-reg-hl7.json")
+    # elif "languages" in req.url or "common-languages-australia" in req.url or "unitsofmeasure.org" in req.url or "units-of-time" in req.url or "www.rcpa.edu.au" in req.url or "www.iana.org" in req.url or "au-timezone" in req.url or "urn:ietf:bcp:47" in req.url:
+    #     rsp = readfile("tx-reg.json")
+    # else:
+    #     rsp = readfile("tx-reg-csiro.json")
         
     logging.info(rsp)
         
