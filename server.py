@@ -19,10 +19,12 @@ class MyServer(BaseHTTPRequestHandler):
             self.wfile.write(MyServer.readfile("metadata.json"))
         elif self.path == "/metadata?mode=terminology":
             self.wfile.write(MyServer.readfile("terminology.json"))
-        elif "common-languages-australia-1" in self.path or "unitsofmeasure.org" in self.path :
-            self.wfile.write(MyServer.readfile("tx-reg.json"))
         else:
-            self.wfile.write(MyServer.readfile("tx-reg-csiro.json"))
+            self.wfile.write(MyServer.readfile("tx-reg.json"))
+        # elif "common-languages-australia-1" in self.path or "unitsofmeasure.org" in self.path :
+        #     self.wfile.write(MyServer.readfile("tx-reg.json"))
+        # else:
+        #     self.wfile.write(MyServer.readfile("tx-reg-csiro.json"))
             
     def do_POST(self):
         self.send_response(200)
